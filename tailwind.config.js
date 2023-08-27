@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/*.{js,jsx}",
     "./src/components/*.{js,jsx}",
+    "./src/containers/*.{js,jsx}",
   ],
   theme: {
     fontSize: {
@@ -171,27 +172,25 @@ module.exports = {
     extend: {
       backgroundImage: {
         'custom-gradient': 'linear-gradient(135deg, rgb(204, 231, 255), rgb(204, 210, 255))',
+        'custom-gradient2': 'linear-gradient(to right, #4868A8 0.5%, #ffffff 0.5%)',
       },
       colors: {
-        "primary-500": "#877EFF",
-        "secondary-500": "#FFB620",
-        "logout-btn": "#FF5A5A",
-        "navbar-menu": "rgba(16, 16, 18, 0.6)",
         "dark-1": "#000000",
         "dark-2": "#121417",
         "dark-3": "#101012",
         "dark-4": "#1F1F22",
-        "blue-1": "rgb(79, 131, 186)",
-        "blue-2": "rgb(79, 131, 186)",
+        "blue-1": "#4F83BA",
+        "blue-2": "#4868A8",
         "blue-3": "#436FAD",
-        "blue-4": "rgba(0, 33, 153, 0.55)",
+        "blue-4": "rgba(0, 33, 153, 0.5)",
         "purple-1": "rgba(158, 153, 255,0.8)",
+        "purple-2": "rgba(158, 153, 255,0.65)",
+        "purple-3": "rgba(99, 51, 255, 0.5)",
         "light-1": "#FFFFFF",
         "light-2": "#EFEFEF",
         "light-3": "#7878A3",
         "light-4": "#5C5C7B",
         "gray-1": "#697C89",
-        glassmorphism: "rgba(16, 16, 18, 0.60)",
       },
       boxShadow: {
         "count-badge": "0px 0px 6px 2px rgba(219, 188, 159, 0.30)",

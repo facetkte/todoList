@@ -3,9 +3,14 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 const ProgressBarUI = (props) => {
     return (
-        <div className='flex py-8'>
-            <p className='text-body-large text-blue-4'>{props.percentage}%</p>
-            <ProgressBar className='w-full pt-2 pl-2' bgColor='#7D7DFF' baseBgColor="#FFF" isLabelVisible={false} completed={props.percentage} />
+        <div className='max-w-[90%] mx-auto flex items-center py-4'>
+            <p className='text-body-large text-blue-4 pr-2'>{props.percentage}%</p>
+            <ProgressBar
+                className='flex-grow'
+                bgColor='#7D7DFF' baseBgColor="#FFF"
+                isLabelVisible={false}
+                completed={props.percentage}
+            />
         </div>
     );
 }

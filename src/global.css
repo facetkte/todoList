@@ -1,42 +1,43 @@
-/* src/index.css */
+/* src/global.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-  
-  .head-text {
-    @apply text-heading1-bold text-blue-1 pt-10;
-  }
-
-  .button-input{
-    @apply text-white border-none;
-  }
 
   .button-add{
     @apply w-16 text-white ml-2 bg-blue-800 rounded-md text-button-bold bg-opacity-70
   }
 
-  .bottomComponents {
-    @apply fixed bottom-16 z-10 w-[90%] mx-auto;
-  }
-
   hr{
-    @apply border-gray-400 border-2 my-4;
+    @apply border-gray-400 border-2 my-2 max-w-[90%] mx-auto;
   }
 
-  .toggle-label{
-    @apply relative inline-flex items-center cursor-pointer ml-4;
+  .overflow-container{
+    @apply mb-8 mx-auto max-h-[36vh] overflow-y-scroll;
   }
 
-  .line-through-space::after{
-    content: "   ";
-    width: 100%;
-    text-decoration: line-through;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+  .overflow-container::-webkit-scrollbar{
+    @apply w-2;
   }
 
+  .overflow-container::-webkit-scrollbar-thumb{
+    @apply bg-purple-3 rounded-lg;
+  }
+  
+  .list-item-input{
+    @apply cursor-pointer mx-4 h-8 w-8 relative text-[20px];
+  }
+
+  .list-item-input::after{
+    @apply absolute top-0 w-8 h-8 inline-block visible pl-0 text-center rounded-[4px];
+    content: ' ';
+  }
+
+  .list-item-input:checked::after {
+    @apply text-white font-bold bg-blue-2;
+    content: '✓';
+  }
+  
+  
 }
