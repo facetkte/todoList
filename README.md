@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-Install module to start. \
+Install module to start.\
 ### `npm start`
 
 Runs the app in the development mode.\
