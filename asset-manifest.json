@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/facetkte.github.io/todoList/static/css/main.eb1824e3.css",
+    "main.js": "/facetkte.github.io/todoList/static/js/main.a503edfa.js",
+    "static/js/787.a5cad257.chunk.js": "/facetkte.github.io/todoList/static/js/787.a5cad257.chunk.js",
+    "index.html": "/facetkte.github.io/todoList/index.html",
+    "main.eb1824e3.css.map": "/facetkte.github.io/todoList/static/css/main.eb1824e3.css.map",
+    "main.a503edfa.js.map": "/facetkte.github.io/todoList/static/js/main.a503edfa.js.map",
+    "787.a5cad257.chunk.js.map": "/facetkte.github.io/todoList/static/js/787.a5cad257.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb1824e3.css",
+    "static/js/main.a503edfa.js"
+  ]
+}
